@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.css">
     <script src="js/swiper-bundle.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
@@ -67,10 +68,10 @@
                             <li><a href="#" target="_blank">UNITED STATES</a></li>
                         </ul>
 
-                        <a id="subscribe-button" href="#">구독하기</a>
+                        <a href="#" id="subscribe-button">구독하기</a>
 
                         <div id="nav-menu-btn">
-                            <span></span>
+                            <div></div>
                         </div>
                     </div>
                 </div>
@@ -1354,9 +1355,26 @@
             spaceBetween: 30,
             speed: 1000,
             navigation: {
-                    nextEl: "#best-stories .swiper-button-next",
-                    prevEl: "#best-stories .swiper-button-prev",
+                nextEl: "#best-stories .swiper-button-next",
+                prevEl: "#best-stories .swiper-button-prev",
+            },
+            breakpoints: {
+                360: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 40
+                },
+                768: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 15
+                },
+                1024: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 30
                 }
+            }
         });
     
         // scroll.
@@ -1380,15 +1398,12 @@
     
                 nowScroll = $(window).scrollTop();
     
-                if(nowScroll > beforeScroll) {
-    
-                } else if(nowScroll < beforeScroll) {
+                if(nowScroll < beforeScroll) {
                     $("header").css({
                         "position": "fixed",
                         "transform": "none",
                         "transition": "all 0.2s"
                     });
-    
                 }
     
                 beforeScroll = nowScroll;
@@ -1475,7 +1490,9 @@
         });
     
         // gnb 메뉴.
-        $("#nav-menu-btn").click(function (e){
+        $("#nav-menu-btn").click(function (e) {
+            $("#nav-menu-btn").addClass('active');
+
             $("#gnb-menu").fadeIn(200);
     
             $("body").css({
@@ -1484,6 +1501,8 @@
         });
     
         $("#gnb-close-btn").click(function (e) {
+            $("#nav-menu-btn").removeClass('active');
+
             $("#gnb-menu").fadeOut(200);
     
             $("body").css({
