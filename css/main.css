@@ -724,6 +724,7 @@ main > #hot-keyword > #hot-keyword-content .hot-keyword-post-container:first-chi
     font-weight: 600;
     text-decoration: underline;
     text-underline-position: under;
+    white-space: nowrap;
 }
 
 main > #hot-keyword > #hot-keyword-content .hot-keyword-post-container:hover .hot-keyword-post-title {
@@ -1228,7 +1229,7 @@ footer > #ft-container > #ft-list {
 
 footer > #ft-container > #ft-list li {
     color: #FFF;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 600;
     list-style: none;
 }
@@ -1243,7 +1244,7 @@ footer > #ft-container > #ft-list li:nth-child(n+2)::before {
 }
 
 footer > #ft-container > #ft-copyright {
-    font-size: 13px;
+    font-size: 0.85rem;
     color: #FFF;
     text-align: center;
     opacity: .5;
