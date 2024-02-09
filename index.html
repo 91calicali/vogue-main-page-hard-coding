@@ -11,8 +11,7 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="css/swiper-bundle.css">
     <script src="js/swiper-bundle.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
@@ -21,25 +20,25 @@
 <body>
     <div id="web-container">
         <!-- 헤더 -->
-        <div id="blank-hd"></div>
+        <div class="blank-hd"></div>
 
-        <header class="width-100">
-            <div id="hd-container" class="width-100">
-                <div id="hd-container-top">
-                    <div id="hd-logo">
+        <header id="hd" class="width-100 absolute">
+            <div class="hd-container width-100">
+                <div class="hd-container-top relative">
+                    <div class="hd-logo relative">
                         <img src="resource/image/vogue_logo.svg" class="width-100 height-100" alt="VOGUE">
                     </div>
 
-                    <div id="right-nav">
+                    <div class="right-nav flex absolute">
                         <div class="now-lang list-e" onclick="langList('show')">
                             <span class="list-e">KOREA</span>
                             
-                            <div id="select-arrow" class="list-e">
+                            <div class="select-arrow list-e">
                                 <img src="resource/image/select_arrow.svg" class="width-100 height-100 list-e" alt="language select arrow">
                             </div>
                         </div>
 
-                        <ul class="lang-list">
+                        <ul class="lang-list absolute">
                             <li><a href="#" target="_blank">ARABIA</a></li>
                             <li><a href="#" target="_blank">AUSTRALIA</a></li>
                             <li><a href="#" target="_blank">BRASIL</a></li>
@@ -68,17 +67,17 @@
                             <li><a href="#" target="_blank">UNITED STATES</a></li>
                         </ul>
 
-                        <a href="#" id="subscribe-button">구독하기</a>
+                        <a href="#" class="subscribe-button">구독하기</a>
 
-                        <div id="nav-menu-btn">
+                        <div class="nav-menu-btn">
                             <div></div>
                         </div>
                     </div>
                 </div>
 
-                <div id="hd-container-bottom">
-                    <nav>
-                        <ul>
+                <div class="hd-container-bottom">
+                    <nav class="hd-nav">
+                        <ul class="flex">
                             <li>FASHION</li>
                             <li>BEAUTY</li>
                             <li>LIFESTYLE</li>
@@ -92,46 +91,46 @@
 
         <!-- 메인 -->
         <main class="container">
-            <section id="main-banner">
-                <div id="main-banner-grad" class="width-100"></div>
+            <section id="main-banner" class="relative">
+                <div class="main-banner-grad absolute width-100"></div>
 
-                <p class="width-100">
+                <p class="absolute width-100">
                     <span>
                         패션 뉴스
                     </span>
                     2024.01.08
                 </p>
                
-                <h2 class="width-100">
+                <h2 class="absolute width-100">
                     안젤리나 졸리의 '아틀리에 졸리'
                 </h2>
             </section>
 
             <!-- TODAY’S STORIES -->
-            <section id="todays-stories">
+            <section id="todays-stories" class="relative">
                 <h2>TODAY’S STORIES</h2>
 
-                <div id="todays-stories-content">
-                    <div id="todays-stories-left-area">
+                <div class="todays-stories-content flex">
+                    <div class="todays-stories-left-area">
                         <a href="#" class="width-100">
-                            <div id="todays-stories-left-area-grad"></div>
+                            <div class="todays-stories-left-area-grad absolute"></div>
                             
                             <img src="resource/image/today_stories_image1.jpg" class="width-100" alt="today stories image1">
 
-                            <p>
+                            <p class="absolute">
                                 <span>
                                     패션 아이템
                                 </span>
                                 2024.01.05
                             </p>
                            
-                            <h3>
+                            <h3 class="absolute">
                                 50세도 넘은 나이키 슈즈의 귀환
                             </h3>
                         </a>
                     </div>
 
-                    <div id="todays-stories-right-area">
+                    <div class="todays-stories-right-area flex">
                         <div class="todays-stories-post-container">
                             <div class="todays-stories-post-image">
                                 <img src="resource/image/today_stories_image2.jpg" class="width-100" alt="today stories image2">
@@ -220,10 +219,10 @@
             </section>
 
             <!-- BEST STORIES -->
-            <section id="best-stories">
+            <section id="best-stories" class="relative">
                 <h2>BEST STORIES</h2>
 
-                <div id="best-stories-swiper" class="swiper">
+                <div class="best-stories-swiper swiper">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <a href="#">
@@ -411,15 +410,15 @@
                     </ul>
                 </div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev absolute"></div>
+                <div class="swiper-button-next absolute"></div>
             </section>
 
             <!-- MUST READ -->
             <section id="must-read">
                 <h2>MUST READ</h2>
 
-                <div id="must-read-content">
+                <div class="must-read-content flex relative">
                     <div class="must-read-post-container">
                         <div class="must-read-post-image">
                             <img src="resource/image/must_read_image1.jpg" class="width-100" alt="must read image1">
@@ -499,8 +498,8 @@
             </section>
 
             <!-- HOT KEYWORD -->
-            <section id="hot-keyword">
-                <div id="hot-keyword-content">
+            <section id="hot-keyword" class="relative">
+                <div class="hot-keyword-content flex relative">
                     <div class="hot-keyword-post-container">
                         <h2>HOT KEYWORD</h2>
 
@@ -567,11 +566,11 @@
             </section>
 
             <!-- FASHION -->
-            <section id="fashion">
+            <section id="fashion" class="relative">
                 <h2>FASHION</h2>
 
-                <div id="fashion-content">
-                    <div id="fashion-left-area">
+                <div class="fashion-content flex">
+                    <div class="fashion-left-area flex">
                         <div class="fashion-post-container">
                             <div class="fashion-post-image">
                                 <img src="resource/image/fashion_image1.jpg" class="width-100" alt="fashion image1">
@@ -657,33 +656,33 @@
                         </div>
                     </div>
 
-                    <div id="fashion-right-area">
+                    <div class="fashion-right-area">
                         <a href="#" class="width-100">
-                            <div id="fashion-right-area-grad"></div>
+                            <div class="fashion-right-area-grad absolute"></div>
                             
                             <img src="resource/image/fashion_image5.jpg" class="width-100" alt="fashion image5">
 
-                            <p>
+                            <p class="absolute">
                                 <span>
                                     셀러브리티 스타일
                                 </span>
                                 2024.01.08
                             </p>
                             
-                            <h3>
+                            <h3 class="absolute">
                                 케이티 홈즈가 운동화 대신 선택한 새해 첫 신발
                             </h3>
                         </a>
                     </div>                    
                 </div>
 
-                <a href="#" id="fashion-more">more ></a>
+                <a href="#" class="fashion-more absolute">more ></a>
             </section>
 
-            <section id="lifestyle">
+            <section id="lifestyle" class="relative">
                 <h2>LIFESTYLE</h2>
 
-                <div id="lifestyle-content">
+                <div class="lifestyle-content flex relative">
                     <div class="lifestyle-post-container">
                         <div class="lifestyle-post-image">
                             <img src="resource/image/lifestyle_image1.jpg" class="width-100" alt="life style image1">
@@ -761,34 +760,34 @@
                     </div>
                 </div>
 
-                <a href="#" id="lifestyle-more">more ></a>
+                <a href="#" class="lifestyle-more absolute">more ></a>
             </section>
 
             <!-- BEAUTY -->
-            <section id="beauty">
+            <section id="beauty" class="relative">
                 <h2>BEAUTY</h2>
 
-                <div id="beauty-content">
-                    <div id="beauty-left-area">
+                <div class="beauty-content flex">
+                    <div class="beauty-left-area">
                         <a href="#" class="width-100">
-                            <div id="beauty-left-area-grad"></div>
+                            <div class="beauty-left-area-grad absolute"></div>
                             
                             <img src="resource/image/beauty_image1.jpg" class="width-100" alt="beauty image1">
 
-                            <p>
+                            <p class="absolute">
                                 <span>
                                     뷰티 화보
                                 </span>
                                 2024.01.03
                             </p>
                            
-                            <h3>
+                            <h3 class="absolute">
                                 시대를 초월하여, 차은우 그리고 크리스챤 디올
                             </h3>
                         </a>
                     </div>
 
-                    <div id="beauty-right-area">
+                    <div class="beauty-right-area flex">
                         <div class="beauty-post-container">
                             <div class="beauty-post-image">
                                 <img src="resource/image/beauty_image2.jpg" class="width-100" alt="beauty image2">
@@ -875,14 +874,14 @@
                     </div>
                 </div>
 
-                <a href="#" id="beauty-more">more ></a>
+                <a href="#" class="beauty-more absolute">more ></a>
             </section>
 
             <!-- CULTURE -->
-            <section id="culture">
+            <section id="culture" class="relative">
                 <h2>CULTURE</h2>
 
-                <div id="culture-content">
+                <div class="culture-content flex relative">
                     <div class="culture-post-container">
                         <div class="culture-post-image">
                             <img src="resource/image/culture_image1.jpg" class="width-100" alt="culture image1">
@@ -960,15 +959,15 @@
                     </div>
                 </div>
 
-                <a href="#" id="culture-more">more ></a>
+                <a href="#" class="culture-more absolute">more ></a>
             </section>
 
             <!-- LATEST STORIES -->
-            <section id="latest-stories">
+            <section id="latest-stories" class="relative">
                 <h2>LATEST STORIES</h2>
 
-                <div id="latest-stories-content">
-                    <div id="latest-stories-left-area">
+                <div class="latest-stories-content flex">
+                    <div class="latest-stories-left-area flex">
                         <div class="latest-stories-post-container">
                             <div class="latest-stories-post-image">
                                 <img src="resource/image/latest_stories_image1.jpg" class="width-100" alt="latest stories image1">
@@ -1222,8 +1221,8 @@
                         </div>
                     </div>
 
-                    <div id="latest-stories-right-area">
-                        <div id="latest-stories-ad-container" class="width-100">
+                    <div class="latest-stories-right-area">
+                        <div class="latest-stories-ad-container width-100">
                             <img src="resource/image/ad.jpg" class="width-100" alt="vogue korea youtube">
                         </div>
                     </div>
@@ -1232,13 +1231,13 @@
         </main>
 
         <!-- 푸터 -->
-        <footer>
-            <div id="ft-container" class="width-100">
-                <div id="ft-logo" class="width-100">
+        <footer id="ft">
+            <div class="ft-container relative width-100">
+                <div class="ft-logo width-100">
                     <img src="resource/image/footer_logo.svg" alt="VOGUE">
                 </div>
 
-                <ul id="ft-list" class="width-100">
+                <ul class="ft-list flex width-100">
                     <li>
                         <a>정기구독</a>
                     </li>
@@ -1256,12 +1255,12 @@
                     </li>
                 </ul>
 
-                <p id="ft-copyright">
+                <p class="ft-copyright">
                     VOGUE.CO.KR IS OPERATED BY DOOSAN MAGAZINE
                 </p>
 
                  <!-- TOP 버튼 -->
-                <div id="top-btn">
+                <div class="top-btn">
                     <img src="resource/image/top.svg" alt="top button">
                     <p>TOP</p>
                 </div>
@@ -1269,18 +1268,18 @@
         </footer>
 
         <!-- gnb 메뉴 -->
-        <div id="gnb-menu">
-            <div id="gnb-logo">
+        <div class="gnb-menu">
+            <div class="gnb-logo absolute">
                 <img src="resource/image/footer_logo.svg" class="width-100 height-100" alt="VOGUE">
             </div>
 
-            <div id="gnb-close-btn">
+            <div class="gnb-close-btn absolute">
                 <img src="resource/image/ic_close.svg" class="width-100 height-100" alt="gnb close button">
             </div>
 
-            <div id="gnb-content-container">
-                <div id="gnb-list-container">
-                    <ul id="gnb-main-list">
+            <div class="gnb-content-container flex absolute">
+                <div class="gnb-list-container flex">
+                    <ul class="gnb-main-list flex">
                         <li id="gnb-main-list-li-0" class="gnb-main-list-li">FASHION</li>
                         <li id="gnb-main-list-li-1" class="gnb-main-list-li">BEAUTY</li>
                         <li id="gnb-main-list-li-2" class="gnb-main-list-li">LIFESTYLE</li>
@@ -1288,7 +1287,7 @@
                         <li id="gnb-main-list-li-4" class="gnb-main-list-li">VIDEO</li>
                     </ul>
 
-                    <ul id="gnb-sub-list-0" class="gnb-sub-list">
+                    <ul class="gnb-sub-list-0 gnb-sub-list flex">
                         <li>전체</li>
                         <li>패션 트렌드</li>
                         <li>패션 아이템</li>
@@ -1298,7 +1297,7 @@
                         <li>워치 & 주얼리</li>
                     </ul>
 
-                    <ul id="gnb-sub-list-1" class="gnb-sub-list">
+                    <ul class="gnb-sub-list-1gnb-sub-list">
                         <li>전체</li>
                         <li>뷰티 트렌드</li>
                         <li>뷰티 아이템</li>
@@ -1306,7 +1305,7 @@
                         <li>뷰티 화보</li>
                     </ul>
 
-                    <ul id="gnb-sub-list-2" class="gnb-sub-list">
+                    <ul class="gnb-sub-list-2 gnb-sub-list">
                         <li>전체</li>
                         <li>여행</li>
                         <li>푸드</li>
@@ -1314,7 +1313,7 @@
                         <li>뷰 포인트</li>
                     </ul>
 
-                    <ul id="gnb-sub-list-3" class="gnb-sub-list">
+                    <ul class="gnb-sub-list-3 gnb-sub-list">
                         <li>전체</li>
                         <li>엔터테인먼트</li>
                         <li>아트</li>
@@ -1322,22 +1321,22 @@
                     </ul>
                 </div>
 
-                <div id="gnb-util-container">
+                <div class="gnb-util-container relative">
                     <form>
-                        <input id="searchbar" placeholder="SEARCH">
+                        <input class="searchbar absolute" placeholder="SEARCH">
 
-                        <button id="search-clear-btn" type="reset"></button>
+                        <button class="search-clear-btn absolute" type="reset"></button>
                     </form>
-                    <div id="search-btn"></div>
+                    <div class="search-btn absolute"></div>
 
-                    <ul id="link-list" class="width-100">
+                    <ul class="link-list flex absolute width-100">
                         <li><a href="#">정기구독</a></li>
                         <li><a href="#">회사소개</a></li>
                         <li><a href="#">광고/제휴</a></li>
                         <li><a href="#">MASTHEAD</a></li>
                     </ul>
 
-                    <div id="sns-container" class="width-100">
+                    <div class="sns-container flex absolute width-100">
                         <div id="sns-instar" class="sns-icon"></div>
                         <div id="sns-facebook" class="sns-icon"></div>
                         <div id="sns-x" class="sns-icon"></div>
@@ -1349,7 +1348,7 @@
     </div>
 
     <script>
-        let bestSwiper = new Swiper("#best-stories-swiper", {
+        let bestSwiper = new Swiper(".best-stories-swiper", {
             slidesPerView: 4,
             slidesPerGroup: 4,
             spaceBetween: 30,
@@ -1392,14 +1391,14 @@
     
         function headerFix(yPer) {
             if(yPer > 2.8) {
-                $("header").css({
+                $("#hd").css({
                     "transform": "translate(0px, -215px)"
                 });
     
                 nowScroll = $(window).scrollTop();
     
                 if(nowScroll < beforeScroll) {
-                    $("header").css({
+                    $("#hd").css({
                         "position": "fixed",
                         "transform": "none",
                         "transition": "all 0.2s"
@@ -1408,7 +1407,7 @@
     
                 beforeScroll = nowScroll;
             } else if(yPer <= 0.0) {
-                $("header").css({
+                $("#hd").css({
                     "position": "absolute",
                     "transform": "none",
                     "transition": "none"
@@ -1421,23 +1420,23 @@
                 if(tbFlag == 0) {
                     tbFlag = 1;
     
-                    $("#top-btn").css({
+                    $(".top-btn").css({
                         "display": "block"
                     });
     
-                    $("#top-btn").animate({
+                    $(".top-btn").animate({
                         opacity: 1
                     }, 500);
                 }
     
                 if(yPer > 96.5) {
-                    $("#top-btn").css({
+                    $(".top-btn").css({
                         "position": "absolute",
                         "top": "-70px",
                         "bottom": "auto"
                     });
                 } else if(yPer < 96.5) {
-                    $("#top-btn").css({
+                    $(".top-btn").css({
                         "position": "fixed",
                         "top": "auto",
                         "bottom": "40px"
@@ -1447,12 +1446,12 @@
                 if(tbFlag == 1) {
                     tbFlag = 0;
     
-                    $("#top-btn").animate({
+                    $(".top-btn").animate({
                         opacity: 0
                     }, 500);
     
                     setTimeout(() => {
-                        $("#top-btn").css({
+                        $(".top-btn").css({
                         "display": "none"
                     });
                     }, 500);
@@ -1461,7 +1460,7 @@
         }
     
         // top btn.
-        const tb = document.querySelector("#top-btn");
+        const tb = document.querySelector(".top-btn");
         tb.addEventListener("click", function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
@@ -1471,13 +1470,13 @@
             if(e == "show") {
                 $(".lang-list").fadeIn(150);
     
-                $("#select-arrow img").animate({
+                $(".select-arrow img").animate({
                     rotate: "180deg"
                 });
             } else if(e == "hide") {
                 $(".lang-list").fadeOut(150);
     
-                $("#select-arrow img").animate({
+                $(".select-arrow img").animate({
                     rotate: "360deg"
                 });
             }
@@ -1490,20 +1489,20 @@
         });
     
         // gnb 메뉴.
-        $("#nav-menu-btn").click(function (e) {
-            $("#nav-menu-btn").addClass('active');
+        $(".nav-menu-btn").click(function (e) {
+            $(".nav-menu-btn").addClass('active');
 
-            $("#gnb-menu").fadeIn(200);
+            $(".gnb-menu").fadeIn(200);
     
             $("body").css({
                 "overflow": "hidden"
             });
         });
     
-        $("#gnb-close-btn").click(function (e) {
-            $("#nav-menu-btn").removeClass('active');
+        $(".gnb-close-btn").click(function (e) {
+            $(".nav-menu-btn").removeClass('active');
 
-            $("#gnb-menu").fadeOut(200);
+            $(".gnb-menu").fadeOut(200);
     
             $("body").css({
                 "overflow": "visible",
@@ -1520,7 +1519,7 @@
                 "color": "#999"
             });
     
-            $("#" + overEleId).css({
+            $("." + overEleId).css({
                 "color": "#FFF"
             });
     
@@ -1529,7 +1528,7 @@
             });
             
             if(eleNum < 4) {
-                $("#gnb-sub-list-" + eleNum).css({
+                $(".gnb-sub-list-" + eleNum).css({
                     "display": "flex"
                 });
             }

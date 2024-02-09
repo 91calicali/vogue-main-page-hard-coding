@@ -1,0 +1,908 @@
+@media (min-width:1025px) { 
+    html { font-size: 16px; }
+    .container { padding: 0px 48px 0px 48px; }
+
+    /* header */
+    #hd {
+        .hd-container {
+            .hd-container-top {
+                .hd-logo {
+                    left: 50%; 
+                    transform: translateX(-50%);
+                }
+            }
+    
+            .hd-container-bottom {
+                .hd-nav {
+                    ul {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    /* main banner */
+    #main-banner {
+        padding-top: 50%;
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 2.7rem;
+        }
+    }
+
+    /* today's stories */
+    #todays-stories {
+        .todays-stories-content {
+            .todays-stories-left-area {
+                margin-right: 15px;
+
+                a {
+                    p {
+                        top: 73%;
+                    }
+
+                    h3 {
+                        top: 78%; 
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .todays-stories-right-area {
+                width: calc(60% - 15px); 
+                margin-left: 15px;
+
+                .todays-stories-post-container {
+                    width: calc(50% - 15px); 
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+
+    /* must read */
+    #must-read {
+        .must-read-content {
+            .must-read-post-container { 
+                width: calc(25% - 24px); 
+            }
+        }
+    }
+
+    /* hot keyword */
+    #hot-keyword {
+        .hot-keyword-content {
+            .hot-keyword-post-container { 
+                width: calc(25% - 24px); 
+            }
+        }
+    }
+
+    /* fashion */
+    #fashion {
+        .fashion-content {
+            .fashion-left-area {
+                margin-right: 15px;
+
+                .fashion-post-container { 
+                    width: calc(50% - 15px); 
+                    margin-bottom: 80px; 
+                }
+            }
+
+            .fashion-right-area {
+                width: calc(40% - 15px); 
+                margin-left: 15px;
+
+                a {
+                    p {
+                        top: 73%;
+                    }
+
+                    h3 {
+                        top: 78%; 
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* lifestyle */
+    #lifestyle {
+        .lifestyle-content {
+            .lifestyle-post-container { 
+                width: calc(25% - 24px); 
+            }
+        }
+    }
+
+    /* beauty */
+    #beauty {
+        .beauty-content {
+            .beauty-left-area {
+                margin-right: 15px;
+
+                a {
+                    p {
+                        top: 73%;
+                    }
+
+                    h3 {
+                        top: 78%;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .beauty-right-area {
+                width: calc(60% - 15px); 
+                margin-left: 15px;
+
+                .beauty-post-container { 
+                    width: calc(50% - 15px); 
+                }
+            }           
+        }
+    }
+
+    /* culture */
+    #culture {
+        .culture-content {
+            .culture-post-container { 
+                width: calc(25% - 24px); 
+            }
+        }
+    }
+
+    /* latest stories */
+    #latest-stories {
+        .latest-stories-content {
+            .latest-stories-left-area {
+                width: calc(70% - 15px); 
+                margin-right: 15px;
+
+                .latest-stories-post-container {
+                    width: calc(32% - 15px);
+                }
+            }
+
+            .latest-stories-right-area {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px){ 
+    html { font-size: 15px; }
+    .container { padding: 0px 24px 0px 24px; }
+
+    /* header */
+    .blank-hd { 
+        height: 212px; 
+    }
+
+    #hd {
+        .hd-container {
+            .hd-container-top {
+                .hd-logo { 
+                    left: 2.5%; 
+                    width: 270px; 
+                    transform: translateX(0); 
+                }
+    
+                .right-nav {
+                    .lang-list {
+                        left: -15px;
+                        width: 200px;
+                    }
+    
+                    .subscribe-button {
+                        display: block;
+                    }
+                }
+            }
+    
+            .hd-container-bottom {
+                .hd-nav {
+                    ul {
+                        justify-content: flex-start;
+    
+                        li {
+                            margin-left: 25px; 
+                            margin-right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* gnb */
+    .gnb-content-container {
+        .gnb-list-container {
+            .gnb-main-list {
+                li {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .gnb-sub-list {
+                li {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }    
+
+    /* main banner */
+    .main-banner {
+        padding-top: 100%;
+
+        p {
+            font-size: 1rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    /* today's stories */
+    #todays-stories {
+        .todays-stories-content {
+            flex-wrap: nowrap;
+
+            .todays-stories-left-area {
+                width: calc(40% - 15px); 
+                margin-right: 7.5px;
+                margin-bottom: 0;
+
+                a {
+                    p {
+                        top: 68%; 
+                        left: 30px;
+                    }
+    
+                    h3 {
+                        top: 73%; 
+                        left: 30px; 
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .todays-stories-right-area {
+                flex-wrap: wrap;
+                width: 60%; 
+                margin-left: 7.5px;
+
+                .todays-stories-post-container {
+                    width: calc(50% - 7px); 
+                    margin-bottom: 30px;
+
+                    .todays-stories-post-image {
+                        float: none; 
+                        width: auto; 
+                        margin-right: 0;
+                    }
+
+                    .todays-stories-post-category { 
+                        margin-block-start: 1em; 
+                    }
+
+                    .todays-stories-post-title { 
+                        margin-bottom: 30px; 
+                    }
+                }
+            }
+        }
+    }
+
+    /* best stories */
+    #best-stories {
+        &::before {
+            display: block;
+        }
+    }
+
+    /* must read */
+    #must-read {
+        .must-read-content {
+            flex-wrap: nowrap;
+
+            .must-read-post-container {
+                width: calc(25% - 12px);
+            }
+        }
+    }
+
+    /* hot keyword */
+    #hot-keyword {
+        .hot-keyword-content { 
+            flex-wrap: nowrap; 
+
+            .hot-keyword-post-container { 
+                width: calc(25% - 12px); 
+                margin-bottom: 0; 
+            }
+
+            &:first-child {
+                height: auto;
+            }
+
+            .hot-keyword-post-image { 
+                float: none; 
+                width: auto; 
+                margin-left: 0; 
+                margin-right: 0; 
+            }
+
+            .hot-keyword-post-category { 
+                margin-block-start: 1em; 
+            }
+
+            .hot-keyword-post-title { 
+                margin-bottom: 30px; 
+            }
+        }
+
+        &::before {
+            height: 330px;
+        }
+    }
+
+    /* fashion */
+    #fashion {
+        .fashion-content {
+            flex-wrap: nowrap; 
+            flex-direction: row;
+
+            .fashion-left-area { 
+                width: calc(60% - 15px); 
+                margin-right: 7.5px;
+
+                .fashion-post-container {
+                    width: calc(50% - 7px); 
+                    margin-bottom: 30px;
+
+                    .fashion-post-image { 
+                        float: none; 
+                        width: auto;
+                         margin-right: 0;
+                    }
+
+                    .fashion-post-category { 
+                        margin-block-start: 1em; 
+                    }
+
+                    .fashion-post-title { 
+                        margin-bottom: 30px; 
+                    }
+                }
+            }
+
+            .fashion-right-area { 
+                width: calc(40%); 
+                margin-left: 7.5px; 
+                margin-bottom: 0; 
+
+                a {
+                    p {
+                        top: 68%; 
+                        left: 30px;
+                    }
+
+                    h3 {
+                        top: 73%; 
+                        left: 30px; 
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* lifestyle */
+    #lifestyle {
+        .lifestyle-content {
+            flex-wrap: nowrap;
+        }
+
+        .lifestyle-post-container { 
+            width: calc(25% - 12px); 
+            margin-bottom: 0; 
+        }
+    }
+
+    /* beauty */
+    #beauty {
+        .beauty-content { 
+            flex-wrap: nowrap; 
+
+            .beauty-left-area { 
+                width: calc(40% - 15px); 
+                margin-right: 7.5px; 
+                margin-bottom: 0;
+
+                a {
+                    p {
+                        top: 68%; 
+                        left: 30px;
+                    }
+
+                    h3 {
+                        top: 73%; 
+                        left: 30px; 
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .beauty-right-area {
+                flex-wrap: wrap; 
+                width: 60%; 
+                margin-left: 7.5px;
+
+                .beauty-post-container {
+                    width: calc(50% - 7px); 
+                    margin-bottom: 30px;
+
+                    .beauty-post-image { 
+                        float: none; 
+                        width: auto; 
+                        margin-right: 0; 
+                    }
+
+                    .beauty-post-category { 
+                        margin-block-start: 1em; 
+                    }
+
+                    .beauty-post-title { 
+                        margin-bottom: 30px; 
+                    }
+                }
+            }
+        }
+    }
+
+    /* culture */
+    #culture {
+        .culture-content {
+            flex-wrap: nowrap;
+
+            .culture-post-container {
+                width: calc(25% - 12px); 
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    /* latest stories */
+    #latest-stories {
+        margin-bottom: 160px;
+
+        .latest-stories-content {
+            .latest-stories-left-area {
+                width: 100%; 
+                margin-right: 0;
+
+                .latest-stories-post-container {
+                    width: 32%;
+                }
+            }
+
+            .latest-stories-right-area {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) { 
+    html { font-size: 13px; }
+    h2 { font-size: 2rem; }
+    .container { padding: 0px 12px 0px 12px; }
+
+    /* header */
+    .blank-hd { 
+        height: 174px; 
+    }
+
+    #hd {
+        .hd-container {
+            .hd-container-top {
+                .hd-logo { 
+                    width: 135px; 
+                }
+    
+                .right-nav {
+                    .lang-list {
+                        left: -70px; 
+                        width: 165px;
+                    }
+    
+                    .subscribe-button {
+                        display: none;
+                    }
+                }
+            }
+    
+            .hd-container-bottom {
+                .hd-nav {
+                    ul {
+                        li {
+                            margin-left: 15px; margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* gnb */
+    .gnb-content-container {
+        .gnb-list-container {
+            .gnb-main-list {
+                li {
+                    font-size: 2.2rem;
+                }
+            }
+
+            .gnb-sub-list {
+                li {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    /* main banner */
+    #main-banner { 
+        padding-top: 150%;
+
+        p {
+            top: 78%;
+        }
+
+        h2 {
+            top: 80%; 
+            font-size: 2rem;
+        }
+    }
+
+    /* today's stories */
+    #todays-stories {
+        .todays-stories-content {
+            flex-wrap: wrap;
+
+            .todays-stories-left-area {
+                width: 100%; 
+                margin-right: 0; 
+                margin-bottom: 20px;
+
+                a {
+                    p {
+                        top: 86%; 
+                        left: 45px;
+                    }
+
+                    h3 {
+                        top: 88%; 
+                        left: 45px;
+                    }
+                }
+            }
+
+            .todays-stories-right-area {
+                flex-wrap: wrap; 
+                width: 100%; 
+                margin-left: 0;
+
+                .todays-stories-post-container {
+                    width: 100%; 
+                    margin-bottom: 10px;
+
+                    .todays-stories-post-image { 
+                        float: left; 
+                        width: 40%; 
+                        margin-right: 20px; 
+                    }
+
+                    .todays-stories-post-category { 
+                        margin-block-start: 0; 
+                    }
+
+                    .todays-stories-post-title { 
+                        margin-bottom: 15px; 
+                    }
+                }
+            }
+        }
+    }
+
+    /* best stories */
+    #best-stories {
+        &::before {
+            display: none;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: block;
+        }
+    }
+
+    /* must read */
+    #must-read {
+        .must-read-content { 
+            flex-wrap: wrap; 
+
+            .must-read-post-container { 
+                width: calc(50% - 6px); 
+                margin-bottom: 40px; 
+            }
+        }
+    }
+
+    /* hoy keyword */
+    #hot-keyword {
+        .hot-keyword-content {
+            flex-wrap: wrap;
+
+            .hot-keyword-post-container { 
+                width: 100%; 
+                margin-bottom: 10px; 
+
+                &:first-child {
+                    height: 230px;
+
+                    h2 {
+                        top: 35%; 
+                        left: 50%; 
+                        transform: translateX(-50%); 
+                        font-size: 1.1rem;
+                    }
+
+                    p {
+                        top: 50%; 
+                        left: 50%; 
+                        transform: translateX(-50%); 
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .hot-keyword-post-image { 
+                    float: left; 
+                    width: 37%; 
+                    margin-left: 20px;
+                    margin-right: 20px; 
+                }
+
+                .hot-keyword-post-category { 
+                    margin-block-start: 0; 
+                }
+
+                .hot-keyword-post-title { 
+                    margin-bottom: 15px; 
+                }
+            }
+        }
+
+        &::before { 
+            height: 1200px; 
+        }
+    }
+
+    /* fashion */
+    #fashion {
+        .fashion-content { 
+            flex-wrap: wrap; 
+            flex-direction: column-reverse;
+
+            .fashion-left-area { 
+                flex-wrap: wrap; 
+                width: 100%; 
+                margin-right: 0; 
+
+                .fashion-post-container { 
+                    width: 100%; 
+                    margin-bottom: 10px;
+
+                    .fashion-post-image { 
+                        float: left; 
+                        width: 40%; 
+                        margin-right: 20px; 
+                    }
+
+                    .fashion-post-category {
+                        margin-block-start: 0;
+                    }
+
+                    .fashion-post-title { 
+                        margin-bottom: 15px; 
+                    }
+                }
+            }
+
+            .fashion-right-area { 
+                width: 100%; 
+                margin-left: 0; 
+                margin-bottom: 20px; 
+
+                a {
+                    p {
+                        top: 86%; 
+                        left: 45px;
+                    }
+
+                    h3 {
+                        top: 88%; 
+                        left: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* lifestyle */
+    #lifestyle {
+        .lifestyle-content { 
+            flex-wrap: wrap; 
+
+            .lifestyle-post-container { 
+                width: calc(50% - 6px); 
+                margin-bottom: 40px; 
+            }
+        }
+    }
+
+    /* beauty */
+    #beauty {
+        .beauty-content { 
+            flex-wrap: wrap;
+
+            .beauty-left-area { 
+                width: 100%; 
+                margin-right: 0; 
+                margin-bottom: 20px;
+
+                a {
+                    p {
+                        top: 86%; 
+                        left: 45px;
+                    }
+
+                    h3 {
+                        top: 88%; 
+                        left: 45px;
+                    }
+                }
+            }
+
+            .beauty-right-area {
+                flex-wrap: wrap; 
+                width: 100%; 
+                margin-left: 0;
+
+                .beauty-post-container {
+                    width: 100%; 
+                    margin-bottom: 10px;
+
+                    .beauty-post-image { 
+                        float: left; 
+                        width: 40%; 
+                        margin-right: 20px; 
+                    }
+
+                    .beauty-post-category { 
+                        margin-block-start: 0; 
+                    }
+
+                    .beauty-post-title { 
+                        margin-bottom: 15px; 
+                    }
+                }
+            }
+        }
+    }
+
+    #culture {
+        .culture-content { 
+            flex-wrap: wrap; 
+
+            .culture-post-container { 
+                width: calc(50% - 6px); 
+                margin-bottom: 40px; 
+            }
+        }
+    }
+
+    /* latest stories */
+    #latest-stories { 
+        margin-bottom: 80px; 
+
+        .latest-stories-content {
+            .latest-stories-left-area {
+                .latest-stories-post-container { 
+                    width: calc(50% - 6px); 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px) { 
+    html { font-size: 12px; }
+
+    /* today's stories */
+    #todays-stories {
+        .todays-stories-content {
+           .todays-stories-left-area {
+                a {
+                    p {
+                        top: 75%; 
+                        left: 30px;
+                    }
+
+                    h3 {
+                        top: 79%; 
+                        left: 30px;
+                    }
+                }
+           }
+        }
+    }
+
+    /* best stories */
+    #best-stories {
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+
+    /* fashion */
+    #fashion {
+        .fashion-content {
+            .fashion-right-area {
+                a {
+                    p {
+                        top: 75%; 
+                        left: 30px;
+                    }
+
+                    h3 {
+                        top: 79%; 
+                        left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* beauty */
+    #beauty {
+        .beauty-content {
+            .beauty-left-area {
+                a {
+                    p {
+                        top: 75%; 
+                        left: 30px;
+                    }
+
+                    h3 {
+                        top: 79%; 
+                        left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
